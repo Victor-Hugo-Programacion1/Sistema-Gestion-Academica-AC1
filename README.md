@@ -22,6 +22,6 @@ Pruebas de Asignatura.
 - SAMUEL HERNANDO SILVA NAVARRO
 
 Pruebas y validación de Programa Académico.
-
+Validación de la clase Docente durante la Fase 4 (Sobrescritura).
 
 
