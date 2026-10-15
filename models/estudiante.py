@@ -24,3 +24,15 @@ class Estudiante(Persona):
         self.programa_academico = programa_academico
         self.semestre = semestre
         self.promedio_acumulado = promedio_acumulado
+    def mostrar_informacion(self):
+
+        return (
+            "=== ESTUDIANTE ===\n\n"
+            f"Identificación: {self.identificacion}\n"
+            f"Nombre: {self.nombre}\n"
+            f"Correo: {self.correo}\n"
+            f"Código Estudiantil: {self.codigo_estudiantil}\n"
+            f"Programa Académico: {self.programa_academico.nombre}\n"
+            f"Semestre: {self.semestre}\n"
+            f"Promedio Acumulado: {self.promedio_acumulado}"
+        )   

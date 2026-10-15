@@ -24,3 +24,16 @@ class Docente(Persona):
         self.facultad = facultad
         self.tipo_contratacion = tipo_contratacion
         self.horas_semanales = horas_semanales
+
+    def mostrar_informacion(self):
+
+        return (
+            "=== DOCENTE ===\n\n"
+            f"Identificación: {self.identificacion}\n"
+            f"Nombre: {self.nombre}\n"
+            f"Correo: {self.correo}\n"
+            f"Número Empleado: {self.numero_empleado}\n"
+            f"Facultad: {self.facultad}\n"
+            f"Tipo Contratación: {self.tipo_contratacion}\n"
+            f"Horas Semanales: {self.horas_semanales}"
+        )

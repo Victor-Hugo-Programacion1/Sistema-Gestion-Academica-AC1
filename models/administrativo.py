@@ -24,3 +24,16 @@ class Administrativo(Persona):
         self.dependencia = dependencia
         self.cargo = cargo
         self.jornada = jornada
+        
+    def mostrar_informacion(self):
+
+        return (
+            "=== ADMINISTRATIVO ===\n\n"
+            f"Identificación: {self.identificacion}\n"
+            f"Nombre: {self.nombre}\n"
+            f"Correo: {self.correo}\n"
+            f"Número Empleado: {self.numero_empleado}\n"
+            f"Dependencia: {self.dependencia}\n"
+            f"Cargo: {self.cargo}\n"
+            f"Jornada: {self.jornada}"
+        )

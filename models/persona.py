@@ -16,3 +16,10 @@ class Persona:
             raise ValueError(
                 "El correo no puede estar vacío"
             )
+    def mostrar_informacion(self):
+
+        return (
+            f"Identificación: {self.identificacion}\n"
+            f"Nombre: {self.nombre}\n"
+            f"Correo: {self.correo}"
+        )
