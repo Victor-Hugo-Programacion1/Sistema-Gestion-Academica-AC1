@@ -37,3 +37,9 @@ class Docente(Persona):
             f"Tipo Contratación: {self.tipo_contratacion}\n"
             f"Horas Semanales: {self.horas_semanales}"
         )
+    def realizar_actividad_principal(self):
+        return (
+            f"El docente orienta clases "
+            f"en la facultad de "
+            f"{self.facultad}."
+        )

@@ -36,3 +36,10 @@ class Estudiante(Persona):
             f"Semestre: {self.semestre}\n"
             f"Promedio Acumulado: {self.promedio_acumulado}"
         )   
+    def realizar_actividad_principal(self):
+        return (
+            f"El estudiante cursa "
+            f"{self.programa_academico.nombre} "
+            f"y se encuentra en el semestre "
+            f"{self.semestre}."
+        )

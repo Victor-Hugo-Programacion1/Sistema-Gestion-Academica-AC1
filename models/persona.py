@@ -23,3 +23,5 @@ class Persona:
             f"Nombre: {self.nombre}\n"
             f"Correo: {self.correo}"
         )
+    def realizar_actividad_principal(self):
+        return "Realizando actividad general."

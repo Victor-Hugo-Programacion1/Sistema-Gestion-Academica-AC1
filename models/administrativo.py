@@ -37,3 +37,10 @@ class Administrativo(Persona):
             f"Cargo: {self.cargo}\n"
             f"Jornada: {self.jornada}"
         )
+    def realizar_actividad_principal(self):
+        return (
+            f"El administrativo desempeña "
+            f"el cargo de {self.cargo} "
+            f"en la dependencia "
+            f"{self.dependencia}."
+        )

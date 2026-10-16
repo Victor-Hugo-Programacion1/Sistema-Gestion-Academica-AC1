@@ -66,7 +66,13 @@ def main():
     ]
 
     for persona in personas:
+
         print(persona.mostrar_informacion())
+        print()
+
+    for persona in personas:
+
+        print(persona.realizar_actividad_principal())
         print()
 
 
