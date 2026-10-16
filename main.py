@@ -59,13 +59,15 @@ def main():
         "Diurna"
     )
 
-    print(estudiante.mostrar_informacion())
+    personas = [
+        estudiante,
+        docente,
+        administrativo
+    ]
 
-    print()
-    print(docente.mostrar_informacion())
-
-    print()
-    print(administrativo.mostrar_informacion())
+    for persona in personas:
+        print(persona.mostrar_informacion())
+        print()
 
 
 if __name__ == "__main__":
