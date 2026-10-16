@@ -25,4 +25,8 @@ Validación de la clase Estudiante durante la Fase 4 (Sobrescritura).
 Pruebas y validación de Programa Académico.
 Validación de la clase Docente durante la Fase 4 (Sobrescritura).
 
+Uso de herramientas de inteligencia artificial
+Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo para comprender conceptos, revisar errores, interpretar mensajes de Git y GitHub, validar decisiones de diseño y orientar la resolución de problemas durante el desarrollo.
+La mayor utilidad estuvo en el análisis y corrección de errores, permitiendo comprender qué ocurría en cada situación antes de aplicar una solución.
+Todas las decisiones de diseño, pruebas, validaciones, integración y documentación fueron revisadas y verificadas por los integrantes del equipo antes de incorporarlas al proyecto.
 
