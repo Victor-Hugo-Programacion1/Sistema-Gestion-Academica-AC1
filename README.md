@@ -7,7 +7,7 @@ Estado actual
 
 - Fase 3 - Herencia (Completada)
 
-- Fase 4 - Sobrescritura (Pendiente)
+- Fase 4 - Sobrescritura (Completado)
 
 - Fase 5 - Polimorfismo (Pendiente)
 
