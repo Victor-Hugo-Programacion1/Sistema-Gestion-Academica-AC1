@@ -7,7 +7,7 @@ Estado actual
 
 - Fase 3 - Herencia (Completada)
 
-- Fase 4 - Sobrescritura (Pendiente)
+- Fase 4 - Sobrescritura (Completado)
 
 - Fase 5 - Polimorfismo (Pendiente)
 
@@ -19,9 +19,10 @@ Arquitectura, integración y desarrollo principal.
 
 Validación de créditos.
 Pruebas de Asignatura.
+Validación de la clase Estudiante durante la Fase 4 (Sobrescritura).
 - SAMUEL HERNANDO SILVA NAVARRO
 
 Pruebas y validación de Programa Académico.
-
+Validación de la clase Docente durante la Fase 4 (Sobrescritura).
 
 
