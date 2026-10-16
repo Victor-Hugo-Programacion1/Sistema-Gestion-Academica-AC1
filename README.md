@@ -19,6 +19,7 @@ Arquitectura, integración y desarrollo principal.
 
 Validación de créditos.
 Pruebas de Asignatura.
+Validación de la clase Estudiante durante la Fase 4 (Sobrescritura).
 - SAMUEL HERNANDO SILVA NAVARRO
 
 Pruebas y validación de Programa Académico.
