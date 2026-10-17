@@ -7,9 +7,9 @@ Estado actual
 
 - Fase 3 - Herencia (Completada)
 
-- Fase 4 - Sobrescritura (Completado)
+- Fase 4 - Sobrescritura (Completada)
 
-- Fase 5 - Polimorfismo (Pendiente)
+- Fase 5 - Polimorfismo (Completada)
 
 Participación del equipo
 - VICTOR HUGO ZAPATA FLOREZ
