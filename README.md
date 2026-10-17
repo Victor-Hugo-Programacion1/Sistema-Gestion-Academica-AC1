@@ -25,6 +25,7 @@ Validación de la clase Estudiante durante la Fase 4 (Sobrescritura).
 Pruebas y validación de Programa Académico.
 Validación de la clase Docente durante la Fase 4 (Sobrescritura).
 Validacion de la fase 5 (poliformismo).
+Documentacion de la validacion poliformismo.
 
 Uso de herramientas de inteligencia artificial
 Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo para comprender conceptos, revisar errores, interpretar mensajes de Git y GitHub, validar decisiones de diseño y orientar la resolución de problemas durante el desarrollo.
