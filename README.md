@@ -44,6 +44,7 @@ También se comprobó el correcto funcionamiento de los conceptos de encapsulami
 Todas las pruebas ejecutadas fueron satisfactorias
 
 Validación final del proyecto
+
 Se realizó una revisión final de los requisitos establecidos en la actividad colaborativa.
 
 Se verificó el cumplimiento de:
@@ -59,5 +60,6 @@ Documentación del repositorio.
 El sistema cumple con los criterios técnicos definidos para la entrega.
 
 Cierre del proyecto
+
 Con la implementación y validación de las cinco fases propuestas, se da por finalizado el desarrollo del Sistema de Gestión Académica correspondiente a la Actividad Colaborativa N.° 1.
 El proyecto fue desarrollado de manera colaborativa utilizando GitHub para el control de versiones y el seguimiento de las contribuciones de los integrantes del equipo.
