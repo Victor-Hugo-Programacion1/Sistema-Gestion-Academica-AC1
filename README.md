@@ -22,6 +22,7 @@ Pruebas de Asignatura.
 Validación de la clase Estudiante durante la Fase 4 (Sobrescritura).
 docs: documentar pruebas finales
 docs: registrar validacion final del proyecto
+docs: registrar cierre del proyecto
 
 - SAMUEL HERNANDO SILVA NAVARRO
 
