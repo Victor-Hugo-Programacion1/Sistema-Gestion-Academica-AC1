@@ -43,5 +43,19 @@ También se comprobó el correcto funcionamiento de los conceptos de encapsulami
 
 Todas las pruebas ejecutadas fueron satisfactorias
 
+Validación final del proyecto
+Se realizó una revisión final de los requisitos establecidos en la actividad colaborativa.
+
+Se verificó el cumplimiento de:
+
+Clases y objetos.
+Constructores.
+Encapsulamiento.
+Herencia.
+Sobrescritura.
+Polimorfismo.
+Organización del proyecto.
+Documentación del repositorio.
+El sistema cumple con los criterios técnicos definidos para la entrega.
 
 
