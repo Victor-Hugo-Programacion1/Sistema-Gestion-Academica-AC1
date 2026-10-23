@@ -63,3 +63,12 @@ Cierre del proyecto
 
 Con la implementación y validación de las cinco fases propuestas, se da por finalizado el desarrollo del Sistema de Gestión Académica correspondiente a la Actividad Colaborativa N.° 1.
 El proyecto fue desarrollado de manera colaborativa utilizando GitHub para el control de versiones y el seguimiento de las contribuciones de los integrantes del equipo.
+
+## Relación de composición
+El sistema implementa una relación de composición entre GrupoAcademico y Horario.
+ 
+Cada grupo académico contiene un objeto Horario que almacena el día, hora de inicio, hora de finalización y salón donde se desarrolla la actividad académica.
+ 
+La relación corresponde a composición porque un GrupoAcademico tiene un Horario como parte de su estructura, mientras que no existe una relación de herencia entre ambas clases.
+ 
+Además, GrupoAcademico se relaciona con objetos de las clases Asignatura, Docente y Estudiante para representar la organización de la oferta académica.
