@@ -72,3 +72,8 @@ Cada grupo académico contiene un objeto Horario que almacena el día, hora de i
 La relación corresponde a composición porque un GrupoAcademico tiene un Horario como parte de su estructura, mientras que no existe una relación de herencia entre ambas clases.
  
 Además, GrupoAcademico se relaciona con objetos de las clases Asignatura, Docente y Estudiante para representar la organización de la oferta académica.
+
+## Implementación de la clase abstracta Persona
+La clase Persona fue implementada como clase abstracta para impedir la creación directa de objetos genéricos dentro del sistema.
+Las clases Estudiante, Docente y Administrativo implementan el método realizar_actividad_principal(), permitiendo definir comportamientos específicos para cada tipo de persona.
+Esta implementación fortalece la abstracción y mantiene la estructura orientada a objetos del sistema.
