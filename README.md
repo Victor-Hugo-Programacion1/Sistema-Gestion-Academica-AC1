@@ -73,6 +73,13 @@ La relación corresponde a composición porque un GrupoAcademico tiene un Horari
  
 Además, GrupoAcademico se relaciona con objetos de las clases Asignatura, Docente y Estudiante para representar la organización de la oferta académica.
 
+# Actividad Colaborativa N° 2
+
+## Relaciones principales del sistema
+La clase GrupoAcademico se relaciona con una Asignatura, un Docente, un Horario y una colección de Estudiantes matriculados.
+
+Estas relaciones permiten representar la organización de la oferta académica dentro del sistema y facilitan la gestión de grupos, horarios y procesos de matrícula.
+
 ## Implementación de la clase abstracta Persona
 La clase Persona fue implementada como clase abstracta para impedir la creación directa de objetos genéricos dentro del sistema.
 Las clases Estudiante, Docente y Administrativo implementan el método realizar_actividad_principal(), permitiendo definir comportamientos específicos para cada tipo de persona.
