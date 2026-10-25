@@ -77,3 +77,9 @@ Además, GrupoAcademico se relaciona con objetos de las clases Asignatura, Docen
 La clase Persona fue implementada como clase abstracta para impedir la creación directa de objetos genéricos dentro del sistema.
 Las clases Estudiante, Docente y Administrativo implementan el método realizar_actividad_principal(), permitiendo definir comportamientos específicos para cada tipo de persona.
 Esta implementación fortalece la abstracción y mantiene la estructura orientada a objetos del sistema.
+
+## Uso de herramientas de inteligencia artificial
+
+Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo para comprender conceptos, revisar errores, analizar mensajes del sistema, validar decisiones de diseño y orientar la resolución de problemas presentados durante el desarrollo.
+
+Todas las decisiones de implementación, pruebas, integración y documentación fueron revisadas, comprendidas y validadas por los integrantes del equipo antes de incorporarlas al proyecto.
