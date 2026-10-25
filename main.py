@@ -8,7 +8,11 @@ from models.administrativo import Administrativo
 
 from models.horario import Horario
 from models.grupo_academico import GrupoAcademico
-
+from models.exceptions import (
+    EstudianteDuplicadoError,
+    CapacidadMaximaError,
+    EstudianteNoEncontradoError
+)
 
 def main():
 
@@ -53,6 +57,26 @@ def main():
         4.2
     )
 
+    estudiante2 = Estudiante(
+        "222222",
+        "Ana Lopez",
+        "ana@correo.com",
+        "E002",
+        programa,
+        3,
+        4.0
+    )
+
+    estudiante3 = Estudiante(
+        "333333",
+        "Carlos Torres",
+        "carlos@correo.com",
+        "E003",
+        programa,
+        2,
+        3.8
+    )
+
     docente = Docente(
         "987654",
         "Maria Gomez",
@@ -90,7 +114,7 @@ def main():
         asignatura,
         docente,
         horario2,
-        25
+        2
     )
 
     administrativo = Administrativo(
@@ -106,6 +130,77 @@ def main():
     grupo1.matricular_estudiante(
         estudiante
     )
+
+    try:
+
+        print(
+            "Entrando a la prueba de duplicado"
+        )
+
+        grupo1.matricular_estudiante(
+            estudiante
+        )
+
+    except EstudianteDuplicadoError as e:
+
+        print(
+            "\nPRUEBA ESTUDIANTE DUPLICADO"
+        )
+    try:
+
+        grupo1.retirar_estudiante(
+            "E999"
+        )
+
+    except EstudianteNoEncontradoError as e:
+
+        print(
+            "\nPRUEBA ESTUDIANTE NO ENCONTRADO"
+        )
+
+        print(e)
+
+        print()
+
+    try:
+
+        grupo2.matricular_estudiante(
+            estudiante
+        )
+
+        grupo2.matricular_estudiante(
+            estudiante2
+        )
+
+        grupo2.matricular_estudiante(
+            estudiante3
+        )
+
+    except CapacidadMaximaError as e:
+
+        print(
+            "\nPRUEBA CAPACIDAD MAXIMA"
+        )
+
+        print(e)
+
+        print()
+        
+        print(
+        grupo1.mostrar_informacion_grupo()
+        )
+
+        print()
+
+        print(
+        horario1.mostrar_horario()
+    )
+
+    print()
+
+    grupo1.mostrar_estudiantes()
+
+    print()
 
     print(
         grupo1.mostrar_informacion_grupo()
@@ -142,4 +237,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
