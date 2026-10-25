@@ -8,15 +8,22 @@ from models.administrativo import Administrativo
 
 from models.horario import Horario
 from models.grupo_academico import GrupoAcademico
+
 from models.exceptions import (
     EstudianteDuplicadoError,
     CapacidadMaximaError,
-    EstudianteNoEncontradoError
+    EstudianteNoEncontradoError,
+    AsignaturaNoEncontradaError,
+    ProgramaNoEncontradoError
 )
+
 
 def main():
 
+    # Prueba clase abstracta Persona
+
     try:
+
         persona = Persona(
             "12345678",
             "Victor Hugo Zapata Florez",
@@ -27,11 +34,13 @@ def main():
 
         print(
             "No es posible crear objetos de la clase Persona."
-    )
+        )
 
         print(e)
 
         print()
+
+    # Objetos principales
 
     programa = ProgramaAcademico(
         "SIS001",
@@ -46,6 +55,14 @@ def main():
         3,
         programa
     )
+
+    programas = [
+        programa
+    ]
+
+    asignaturas = [
+        asignatura
+    ]
 
     estudiante = Estudiante(
         "123456",
@@ -87,6 +104,16 @@ def main():
         40
     )
 
+    administrativo = Administrativo(
+        "555555",
+        "Carlos Ruiz",
+        "carlos@correo.com",
+        "A001",
+        "Registro Academico",
+        "Coordinador",
+        "Diurna"
+    )
+
     horario1 = Horario(
         "Lunes",
         "18:00",
@@ -117,25 +144,15 @@ def main():
         2
     )
 
-    administrativo = Administrativo(
-        "555555",
-        "Carlos Ruiz",
-        "carlos@correo.com",
-        "A001",
-        "Registro Academico",
-        "Coordinador",
-        "Diurna"
-    )
+    # Matrícula correcta
 
     grupo1.matricular_estudiante(
         estudiante
     )
 
-    try:
+    # PRUEBA ESTUDIANTE DUPLICADO
 
-        print(
-            "Entrando a la prueba de duplicado"
-        )
+    try:
 
         grupo1.matricular_estudiante(
             estudiante
@@ -146,6 +163,13 @@ def main():
         print(
             "\nPRUEBA ESTUDIANTE DUPLICADO"
         )
+
+        print(e)
+
+        print()
+
+    # PRUEBA ESTUDIANTE NO ENCONTRADO
+
     try:
 
         grupo1.retirar_estudiante(
@@ -161,6 +185,8 @@ def main():
         print(e)
 
         print()
+
+    # PRUEBA CAPACIDAD MÁXIMA
 
     try:
 
@@ -185,22 +211,72 @@ def main():
         print(e)
 
         print()
-        
+
+    # PRUEBA ASIGNATURA NO ENCONTRADA
+
+    try:
+
+        codigo_asignatura = "MAT999"
+
+        asignatura_encontrada = None
+
+        for asignatura_actual in asignaturas:
+
+            if (
+                asignatura_actual.codigo
+                == codigo_asignatura
+            ):
+                asignatura_encontrada = asignatura_actual
+
+        if asignatura_encontrada is None:
+
+            raise AsignaturaNoEncontradaError(
+                "La asignatura buscada no existe."
+            )
+
+    except AsignaturaNoEncontradaError as e:
+
         print(
-        grupo1.mostrar_informacion_grupo()
+            "\nPRUEBA ASIGNATURA NO ENCONTRADA"
         )
+
+        print(e)
 
         print()
 
+    # PRUEBA PROGRAMA NO ENCONTRADO
+
+    try:
+
+        codigo_programa = "ADM999"
+
+        programa_encontrado = None
+
+        for programa_actual in programas:
+
+            if (
+                programa_actual.codigo
+                == codigo_programa
+            ):
+                programa_encontrado = programa_actual
+
+        if programa_encontrado is None:
+
+            raise ProgramaNoEncontradoError(
+                "El programa académico buscado no existe."
+            )
+
+    except ProgramaNoEncontradoError as e:
+
         print(
-        horario1.mostrar_horario()
-    )
+            "\nPRUEBA PROGRAMA NO ENCONTRADO"
+        )
 
-    print()
+        print(e)
 
-    grupo1.mostrar_estudiantes()
+        print()
 
-    print()
+    # Información del grupo
 
     print(
         grupo1.mostrar_informacion_grupo()
@@ -217,6 +293,8 @@ def main():
     grupo1.mostrar_estudiantes()
 
     print()
+
+    # Información de las personas
 
     personas = [
         estudiante,
@@ -226,16 +304,22 @@ def main():
 
     for persona in personas:
 
-        print(persona.mostrar_informacion())
+        print(
+            persona.mostrar_informacion()
+        )
+
         print()
+
+    # Polimorfismo
 
     for persona in personas:
 
-        print(persona.realizar_actividad_principal())
+        print(
+            persona.realizar_actividad_principal()
+        )
+
         print()
 
 
 if __name__ == "__main__":
     main()
-
-
